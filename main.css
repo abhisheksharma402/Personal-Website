@@ -1,0 +1,150 @@
+/* adding initial styles */
+*{
+    padding:0;
+    margin:0;
+}
+
+/* the divs in the .main element will appear in grid layout */
+.main{
+    display: grid;
+    /* this signifies how much %age of width of the parent element, each child takes */
+    grid-template-columns: 50% 50%;
+}
+
+
+.personal{
+    background: linear-gradient(#0ca89b, #0d699a);
+    padding: 30px;
+    line-height: 2em;
+}
+h1,h2{
+    letter-spacing: 5px;
+}
+.profile img{
+    margin: 20px 0 20px 0;
+}
+
+.gen{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile p{
+    font-size: 1.1em;
+}
+
+.pic-name{
+    display: flex;
+    align-items: center;
+}
+.pic-name span{
+    padding: 40px;
+    font-weight:bold;
+    font-size: 2em;
+}
+
+.personal div{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact a{
+    text-decoration:none;
+    color: #fff;
+    vertical-align:top;
+}
+
+.contact a:hover{
+    color: #244e64;
+}
+
+
+.tech{
+    padding: 30px;
+    line-height: 2em;
+    /* font-size: 1.2em; */
+}
+
+.edu-row, .exp-1, .skill-row{
+    margin: 20px;
+}
+
+
+
+.edu-row h5{
+    /* font-size: 1.2em; */
+    font-size: 20px;
+}
+
+.dur{
+    color: gray;
+}
+
+.edu h2, .exp h2, .skills h2{
+    background-color: #ffba06;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.cpp{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.webdev{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.skill-row{
+    width: 50%;
+    margin: 50px 20px 50px 0;
+}
+
+.personal img{
+    border-radius: 60px;
+}
+
+
+/* adjusting styles for smaller screens (screens of width till 768px)*/
+@media screen and (max-width:768px) {
+    .tech{
+        padding: 0px;
+        /* font-size: 1.2em; */
+    }
+    .pic-name{
+        display: block;
+    }
+    .pic-name span{
+        padding: 0px;
+        font-weight:bold;
+        /* font-size: 0.5em; */
+    }
+    .personal{
+        padding: 15px;
+    }
+
+    .edu h2, .exp h2, .skills h2{
+        border-radius: 0;
+    }
+
+    .skill-row{
+        width: 85%;
+        margin:20px 0 20px 20px;
+
+    }
+    .cpp{
+        /* width: 100%; */
+        clear: both;
+        margin-right: 0px;
+    }
+    
+    .webdev{
+        clear: both;
+        margin-left: 0px;
+    }
+
+}
